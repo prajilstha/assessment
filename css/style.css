@@ -1,0 +1,16 @@
+#contentDiv{
+	padding: 2%;
+}
+
+#hiddenDiv{
+	display: none;
+}
+
+#displayAppointment{
+  width:50%;
+}
+
+#lblDate{
+	padding: 2px;
+	color: red;
+}

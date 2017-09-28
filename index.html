@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Assessment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+  		<span class="navbar-brand">Assessment</span>
+	</nav>
+	<div id="contentDiv">
+		<form method="post" action="bin/insertData.pl"> 
+			<input type="button" value="New" id="btnNew" class="btn btn-primary"/>
+			<div id="hiddenDiv">
+			<input type="submit" value="Add" id="btnAdd" class="btn btn-success"/>&nbsp;
+			<input type="button" value="Cancel" id="btnCancel" class="btn btn-danger"/><br /><br />
+			<div id="info">
+				<table>
+					<tr><td><label class="col-md-4 control-label">Date</label> </td><td><input type="date" id="txtDate" name="txtDate" required class="form-control input-md"/></td><td><label id="lblDate"></label></td></tr>
+				
+					<tr><td><label class="col-md-4 control-label">Time</label></td><td><input type="time" id="txtTime" name="txtTime" required class="form-control input-md"/></td></tr>
+				
+					<tr><td><label class="col-md-4 control-label">Description</label></td><td><input type="text" id="txtDescription" placeholder="Description Here..." name="txtDescription" required class="form-control input-md"/></td></tr>
+				</table>
+			</div>
+	 	</form>
+	</div>
+	 <br />
+	<form>
+		<input type="text" id="txtSearch" name="txtSearch" required="true" placeholder="Search Data..."/>&nbsp;<input type="button" value="Search" id="btnSearch" class="btn btn-success"/><br />
+	</form>
+	 <br />
+	 <!-- Area to display appointments -->
+	<div id="displayAppointment"></div>
+	</div>
+
+	<footer>
+		<script type="text/javascript" src="js/customScript.js"></script>
+
+	</footer>
+
+</body>
+</html>
